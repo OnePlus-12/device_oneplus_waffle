@@ -10,3 +10,9 @@ ro.surface_flinger.set_touch_timer_ms=200
 
 # USB
 vendor.usb.product_string=OnePlus 12
+
+# InfinityX
+ro.infinity.soc=Snapdragon 8 Gen 3
+ro.infinity.battery=5400 mAh
+ro.infinity.display=3168 x 1440, 120 Hz
+ro.infinity.camera=50MP + 48MP + 64MP
