@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from waffle device
 $(call inherit-product, device/oneplus/waffle/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := yaap_waffle
+PRODUCT_NAME := lineage_waffle
 PRODUCT_DEVICE := waffle
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -37,3 +37,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=CPH2573
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Evox stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_NO_CAMERA := true
+TARGET_HAS_UDFPS := true
+WITH_GMS := true
+EVO_BUILD_TYPE := Unofficial
+TORCH_STR_SUPPORTED := true
